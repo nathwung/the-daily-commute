@@ -75,8 +75,7 @@ The Daily Commute is an interactive desktop map application built in C++ using G
 ### 🆘 Help Panel
 - One-click **Help** button shows:
   - 📖 Quick-start instructions  
-  - 🧭 Traffic legend & usage guide  
-  - Emoji-labeled features
+  - 🧭 Traffic legend & usage guide
 
 ---
 
