@@ -1,7 +1,7 @@
 # 🗺️ The Daily Commute
 
 [![Built with C++](https://img.shields.io/badge/Built%20with-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![GUI with GTK](https://img.shields.io/badge/GUI-GTK-8BC34A?style=for-the-badge&logo=gnome&logoColor=white)](https://www.gtk.org/)
+[![GUI with GTK](https://img.shields.io/badge/GUI-GTK-4E9A06?style=for-the-badge&logo=gtk&logoColor=white)](https://www.gtk.org/)
 [![Pathfinding](https://img.shields.io/badge/Includes-A%2A%20Pathfinding-FF9800?style=for-the-badge&logo=mapbox&logoColor=white)]()
 [![Map Data](https://img.shields.io/badge/Data-OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://www.openstreetmap.org/)
 
