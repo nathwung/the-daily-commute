@@ -17,7 +17,7 @@
 - Load any city map from a **dropdown menu**
 - Supports over 15 global cities
 
-### 🗺️ Find Path
+### 📍 Find Path
 - Click **two intersections** to draw the optimal route
 - Or use **Find Path** dialog to enter two intersection name pairs
 - Supports **partial street names** and **autocomplete dropdowns**
