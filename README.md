@@ -99,7 +99,7 @@
 
 ---
 
-## 🚚 Courier Routing Backend (M4 Optimization)
+## 🚚 Courier Routing
 
 A fully optimized **multi-location delivery routing algorithm** was developed in C++ for the Traveling Courier Problem, though it is not integrated into the GUI.
 
