@@ -5,77 +5,80 @@
 [![Pathfinding](https://img.shields.io/badge/Includes-A%2A%20Pathfinding-FF9800?style=for-the-badge&logo=mapbox&logoColor=white)]()
 [![Map Data](https://img.shields.io/badge/Data-OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://www.openstreetmap.org/)
 
-The Daily Commute is an interactive desktop map application built in C++ using GTK and EZGL, designed to simulate real-world urban navigation. Users can explore city maps, search for intersections, display POIs, and plan optimized routes using A* pathfinding — all enhanced with live traffic conditions, weather data, and transit overlays for an immersive commute experience.
+**The Daily Commute** is an interactive **desktop map application** built in **C++ using GTK and EZGL**, designed to simulate real-world urban navigation. Users can explore city maps, search for intersections, display POIs, and plan optimized routes using **A\*** pathfinding — all enhanced with **live traffic conditions**, **weather data**, and **transit overlays** for an immersive commute experience.
 
 ---
 
 ## 🚀 Features
 
 ### 🕹️ Arrow Navigation
-- Pan across the map using **arrow keys**
-- Zoom using scroll wheel or touchpad
+- Move around the map using **arrow keys**
+- Zoom using scroll wheel or trackpad
 
 ### 🌍 Pick Map
-- Select a city map via a **dropdown menu**
-- Supports over 15+ global cities
+- Load any city map from a **dropdown menu**
+- Supports over 15 global cities
 
 ### 🗺️ Find Path
-- Click **two intersections** to find the **optimal path**
-- Pathfinding uses **A\*** algorithm with turn penalties
-- Path is **color-coded by live traffic data**:
+- Click **two intersections** to draw the optimal route
+- Or use **Find Path** dialog to enter two intersection name pairs
+- Supports **partial street names** and **autocomplete dropdowns**
+- Uses **A\*** pathfinding with turn penalties
+- Route is **color-coded** by live traffic:
   - 🔴 Heavy  
   - 🟠 Moderate  
   - 🔵 Light
 - Sidebar displays:
   - 🕒 Estimated travel time  
   - 📏 Total distance  
-  - 🚗 Step-by-step directions (turns included)
-
-### 🧹 Clear Path
-- Clears the current route and instructions panel
-
-### 🚲 Transportation Routes
-- Toggle overlays for:
-  - 🚇 **Subway Lines** (color-coded by line)  
-  - 🚴 **Bike Routes** (highlighted green)
-
-### 🚦 Show Traffic Lights
-- Renders traffic light **icons** at intersections
-- Only visible when zoomed in
-
-### 🌙 Night Mode
-- Toggle between **light** and **dark** map themes
-
-### 📍 Clear All Pins
-- Clears all dropped pins, selected intersections, and overlays
+  - 🚗 Turn-by-turn directions
 
 ### 🔍 Find Intersection
-- Enter two **street names** to automatically zoom to their intersection
+- Enter **two street names** to zoom to their intersection
+- Works with **partial name matches**
+- Includes **live autocomplete suggestions**
+
+### 📌 Clear All Pins
+- Removes all selected intersections, paths, and POI pins
+
+### 🧹 Clear Path
+- Clears the current path and sidebar instructions
+
+### 🚲 Transportation Routes
+- Toggle:
+  - 🚇 **Subway lines** (color-coded by line)
+  - 🚴 **Bike routes** (highlighted in green)
+
+### 🚦 Show Traffic Lights
+- Displays traffic light **icons** at intersections where they exist
+- Visible when zoomed in for better detail
+
+### 🌙 Night Mode
+- Switch between **light** and **dark** map themes
 
 ### 🏙️ POI Display
-- Shows Points of Interest (POIs) like:
-  - 🏫 Libraries  
-  - 🍽️ Restaurants  
-  - 🏧 Banks  
-- Click to view:
+- Shows **points of interest (POIs)** like:
+  - 🍕 Restaurants  
+  - 🏦 Banks  
+  - 📚 Libraries  
+- Click a POI to view:
   - 🏷️ Name  
   - 🏠 Address  
   - 🗂️ Category/type  
-  *(fetched via OpenStreetMap API)*
+  *(Info fetched via OpenStreetMap Nominatim API)*
 
 ### 🛣️ Street Info
-- Click any street to:
-  - Drop a pin at its **nearest intersection**
+- Click on any street to:
+  - Drop a pin at the nearest intersection
   - View:
-    - 📊 Live traffic speed & congestion  
-    - 🌦️ Real-time weather info  
+    - 🚦 Live traffic speed & congestion  
+    - 🌦️ Weather data  
     - 🚧 Road closure status  
-  *(fetched via TomTom and OpenWeatherMap APIs)*
+  *(Info pulled from TomTom & OpenWeatherMap APIs)*
 
 ### 🆘 Help Panel
-- One-click **Help** button shows:
-  - 📖 Quick-start instructions  
-  - 🧭 Traffic legend & usage guide
+- Access help from a **dedicated button**
+- Emoji-labeled guide with usage tips and traffic color legend
 
 ---
 
@@ -83,13 +86,14 @@ The Daily Commute is an interactive desktop map application built in C++ using G
 
 - **Language**: C++  
 - **GUI Framework**: GTK  
-- **Rendering**: EZGL  
+- **Graphics/Rendering**: EZGL  
 - **Pathfinding**: A\* with turn penalties & traffic weighting  
-- **Map Data**: OpenStreetMap (`StreetsDatabaseAPI`, `OSMDatabaseAPI`)  
+- **Map Data**: OpenStreetMap  
 - **Live APIs**:
-  - 🚦 TomTom Traffic API  
+  - 🛣️ TomTom Traffic API  
   - 🌦️ OpenWeatherMap API  
-  - 🗺️ OpenStreetMap Nominatim API
+  - 🏷️ OpenStreetMap Nominatim API  
+- **Team Size**: 3 developers
 
 ---
 
