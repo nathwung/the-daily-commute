@@ -99,7 +99,7 @@
 
 ---
 
-## 🚚 Courier Routing
+## 🚚 Courier Delivery Routing
 
 A fully optimized **multi-location delivery routing algorithm** was developed in C++ for the Traveling Courier Problem, though it is not integrated into the GUI.
 
@@ -112,4 +112,8 @@ A fully optimized **multi-location delivery routing algorithm** was developed in
 - **2-opt optimization** for legality-preserving improvements
 - **Multiple parallel trials** to ensure low-quality-of-result (QoR)
 - **Dynamic trial count** based on problem size
-- **Guaranteed legal solution** returned within **45 seconds**
+- **Guaranteed legal solution** returned under **50 seconds**
+
+## 🔗 Links
+
+- 💻 **GitHub Repository**: [The Daily Commute](https://github.com/nathwung/the-daily-commute)
