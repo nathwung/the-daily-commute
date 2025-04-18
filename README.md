@@ -5,7 +5,7 @@
 [![Pathfinding](https://img.shields.io/badge/Includes-A%2A%20Pathfinding-FF9800?style=for-the-badge&logo=mapbox&logoColor=white)]()
 [![Map Data](https://img.shields.io/badge/Data-OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://www.openstreetmap.org/)
 [![Optimized Routing](https://img.shields.io/badge/Optimized-Multithreaded%20Courier%20Routing-blueviolet?style=for-the-badge&logo=databricks)]()
-[![Fast Delivery Engine](https://img.shields.io/badge/Engine-Greedy%20%2B%202--Opt%20Search-orange?style=for-the-badge&logo=lightning&logoColor=white)]()
+[![Fast Delivery Engine](https://img.shields.io/badge/Engine-Greedy%20%26%202--Opt%20Search-orange?style=for-the-badge&logo=lightning&logoColor=white)]()
 
 **The Daily Commute** is an interactive **desktop map application** built in **C++ using GTK and EZGL**, designed to simulate real-world urban navigation. Users can explore city maps, search for intersections, display POIs, and plan optimized routes using **A\*** pathfinding — all enhanced with **live traffic conditions**, **weather data**, and **transit overlays** for an immersive commute experience.
 
