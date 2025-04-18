@@ -13,10 +13,6 @@
 
 ## 🚀 Features
 
-### 🕹️ Arrow Navigation
-- Move around the map using **arrow keys**
-- Zoom using scroll wheel or trackpad
-
 ### 🌍 Pick Map
 - Load any city map from a **dropdown menu**
 - Supports over 15 global cities
