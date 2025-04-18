@@ -93,4 +93,21 @@
   - 🛣️ TomTom Traffic API  
   - 🌦️ OpenWeatherMap API  
   - 🏷️ OpenStreetMap Nominatim API  
-- **Team Size**: 3 developers
+- **Team Size**: 3
+
+---
+
+## 🚚 Courier Routing Backend (M4 Optimization)
+
+A fully optimized **multi-location delivery routing algorithm** was developed in C++ for the Traveling Courier Problem, though it is not integrated into the GUI.
+
+### 🔧 Features:
+- **Multithreaded Dijkstra all-pairs precomputation**
+- **Shared-mutex concurrent caching** for path and travel times
+- **Greedy randomized routing** with tunable parameters:
+  - Pickup and dropoff weighting
+  - Density bonuses
+- **2-opt optimization** for legality-preserving improvements
+- **Multiple parallel trials** to ensure low-quality-of-result (QoR)
+- **Dynamic trial count** based on problem size
+- **Guaranteed legal solution** returned within **45 seconds**
