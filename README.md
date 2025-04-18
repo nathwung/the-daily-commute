@@ -16,7 +16,7 @@
 - Zoom with scroll or touchpad gestures
 
 ### 🗺️ Pick Map
-- Select a city map from the **dropdown menu** to load its data
+- Select a city map from the **dropdown menu** to load its map
 
 ### 🧭 Find Path
 - Click **two intersections** on the map to automatically draw the **optimal path**
