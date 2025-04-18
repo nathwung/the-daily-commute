@@ -5,68 +5,78 @@
 [![Pathfinding](https://img.shields.io/badge/Includes-A%2A%20Pathfinding-FF9800?style=for-the-badge&logo=mapbox&logoColor=white)]()
 [![Map Data](https://img.shields.io/badge/Data-OpenStreetMap-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://www.openstreetmap.org/)
 
-**The Daily Commute** is a fully interactive desktop map application built in **C++ with GTK** and rendered using **EZGL**. It provides a rich set of features to explore maps, plan routes, visualize real-time traffic, view points of interest, and simulate a full daily navigation experience — all with a clean and intuitive sidebar UI.
+**The Daily Commute** is an interactive C++ desktop map application built using **GTK and EZGL**. It allows users to explore city maps, search intersections, display POIs, and plan real-time optimized travel routes using **A\*** pathfinding with live traffic and weather overlays.
 
 ---
 
 ## 🚀 Features
 
-### 🧭 Arrow Navigation
-- Move around the map using the **arrow keys**
-- Zoom with scroll or touchpad gestures
+### 🕹️ Arrow Navigation
+- Pan across the map using **arrow keys**
+- Zoom using scroll wheel or touchpad
 
-### 🗺️ Pick Map
-- Select a city map from the **dropdown menu** to load its map
+### 🌍 Pick Map
+- Select a city map via a **dropdown menu**
+- Supports over 15+ global cities
 
-### 🧭 Find Path
-- Click **two intersections** on the map to automatically draw the **optimal path**
-- Uses **A\* pathfinding with turn penalties**
-- Route is **color-coded based on live traffic**:
+### 🗺️ Find Path
+- Click **two intersections** to find the **optimal path**
+- Pathfinding uses **A\*** algorithm with turn penalties
+- Path is **color-coded by live traffic data**:
   - 🔴 Heavy  
   - 🟠 Moderate  
   - 🔵 Light
-- A **sidebar panel** shows:
+- Sidebar displays:
   - 🕒 Estimated travel time  
   - 📏 Total distance  
-  - 🚦 Turn-by-turn driving instructions
+  - 🚗 Step-by-step directions (turns included)
 
 ### 🧹 Clear Path
-- Clears the current path and sidebar route display so a new one can be planned
+- Clears the current route and instructions panel
 
 ### 🚲 Transportation Routes
-- Toggle **subway lines** and **bike routes** on the map for easier commute planning
+- Toggle overlays for:
+  - 🚇 **Subway Lines** (color-coded by line)  
+  - 🚴 **Bike Routes** (highlighted green)
 
 ### 🚦 Show Traffic Lights
-- Adds a traffic light image at every intersection where a light is present  
-- Visible when zoomed in closely for detailed navigation
+- Renders traffic light **icons** at intersections
+- Only visible when zoomed in
 
 ### 🌙 Night Mode
-- Switch between day and night themes to reduce eye strain
+- Toggle between **light** and **dark** map themes
 
-### 📌 Clear All Pins
-- Removes all selected pins, intersections, and POIs from the map
+### 📍 Clear All Pins
+- Clears all dropped pins, selected intersections, and overlays
 
-### 🔎 Find Intersection
-- Type two street names to automatically zoom to their **intersection location**
+### 🔍 Find Intersection
+- Enter two **street names** to automatically zoom to their intersection
 
-### 📍 POI Display
-- Shows **points of interest** (POIs) such as restaurants, libraries, banks, etc.
-- Clicking a POI opens a popup with:
+### 🏙️ POI Display
+- Shows Points of Interest (POIs) like:
+  - 🏫 Libraries  
+  - 🍽️ Restaurants  
+  - 🏧 Banks  
+- Click to view:
   - 🏷️ Name  
   - 🏠 Address  
-  - 🏷️ Category/type
+  - 🗂️ Category/type  
+  *(fetched via OpenStreetMap API)*
 
 ### 🛣️ Street Info
-- Click on any **street** to:
-  - Drop a pin at the nearest intersection
-  - View current **live traffic**, **weather**, and **road closure** status in the sidebar
+- Click any street to:
+  - Drop a pin at its **nearest intersection**
+  - View:
+    - 📊 Live traffic speed & congestion  
+    - 🌦️ Real-time weather info  
+    - 🚧 Road closure status  
+  *(fetched via TomTom and OpenWeatherMap APIs)*
 
 ### 🆘 Help Panel
-- Accessible from the “Help” button
-- Displays a quick-start guide with:
-  - Emoji-labeled instructions  
-  - Feature usage breakdown  
-  - Visual key for traffic color coding
+- One-click **Help** button shows:
+  - 📖 Quick-start instructions  
+  - 🧭 Traffic legend & usage guide  
+  - Emoji-labeled features
 
 ---
 
@@ -75,9 +85,12 @@
 - **Language**: C++  
 - **GUI Framework**: GTK  
 - **Rendering**: EZGL  
-- **Pathfinding Algorithm**: A* with turn penalties and live traffic weighting  
-- **Map Data**: OpenStreetMap (via `StreetsDatabaseAPI`)  
-- **Features**: Real-time traffic, transit overlays, POI popups, directions, themes
+- **Pathfinding**: A\* with turn penalties & traffic weighting  
+- **Map Data**: OpenStreetMap (`StreetsDatabaseAPI`, `OSMDatabaseAPI`)  
+- **Live APIs**:
+  - 🚦 TomTom Traffic API  
+  - 🌦️ OpenWeatherMap API  
+  - 🗺️ OpenStreetMap Nominatim API
 
 ---
 
@@ -85,4 +98,3 @@
 
 - 💻 **Source Code**: [GitHub Repository](https://github.com/nathwung/the-daily-commute)  
 - 🎥 **Demo Video**: *Coming Soon*
-  
