@@ -7,7 +7,7 @@
 [![Optimized Routing](https://img.shields.io/badge/Optimized-Multithreaded%20Courier%20Routing-blueviolet?style=for-the-badge&logo=databricks)]()
 [![Fast Delivery Engine](https://img.shields.io/badge/Engine-Greedy%20%26%202--Opt%20Search-orange?style=for-the-badge&logo=lightning&logoColor=white)]()
 
-**The Daily Commute** is an interactive **desktop map application** built in **C++ using GTK and EZGL**, designed to simulate real-world urban navigation. Users can explore city maps, search for intersections, display POIs, and plan optimized routes using **A\*** pathfinding — all enhanced with **live traffic conditions**, **weather data**, and **transit overlays** for an immersive commute experience.
+**The Daily Commute** is an interactive **desktop map application** built in **C++ using GTK and EZGL**, designed to simulate real-world urban navigation. Users can explore city maps, search for intersections, display POIs, and plan optimized routes using **A\*** pathfinding — all enhanced with **live traffic conditions**, **weather data**, and **transit overlays** for an immersive commute experience. It also features a high-performance **multi-location courier routing algorithm**, powered by a **greedy & 2-opt strategy** with **multithreaded Dijkstra precomputation** and **concurrent path/time caching**.
 
 ---
 
