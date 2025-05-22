@@ -112,4 +112,5 @@ A fully optimized **multi-location delivery routing algorithm** was developed in
 
 ## 🔗 Links
 
+- 📽️ **Final Presentation Slides**: [View Slides](https://docs.google.com/presentation/d/1hvdEOAHT-jeFQuPY6HPcz0kfbgeSO3NfCYcpoRi9Wgw/edit?usp=sharing)
 - 💻 **GitHub Repository**: [The Daily Commute](https://github.com/nathwung/the-daily-commute)
